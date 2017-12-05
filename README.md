@@ -6,6 +6,10 @@ williamyeh.prometheus for Ansible Galaxy
 
 
 
+## Additions
+This role contains additional changes from https://github.com/William-Yeh/ansible-prometheus/pull/57 and https://github.com/William-Yeh/ansible-prometheus/pull/35
+
+
 ## Summary
 
 Role name in Ansible Galaxy: **[williamyeh.prometheus](https://galaxy.ansible.com/williamyeh/prometheus/)**

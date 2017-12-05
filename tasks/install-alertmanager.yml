@@ -120,6 +120,10 @@
   template: src="../templates/alertmanager.sysvinit.{{ ansible_os_family|lower }}.sh.j2"  dest="/etc/init.d/alertmanager"  mode="a+x"
   when: not prometheus_use_systemd|bool
 
+- name: reload systemctl
+  shell: systemctl daemon-reload
+  ignore_errors: yes
+
 - name: set INIT status
   service: name=alertmanager enabled=yes
 
